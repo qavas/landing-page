@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="./config.js"></script>
+	<script>
+		document.write('<title>' + config.websitetitle + '</title>')
+		document.write('<link rel="icon" href=' + config.logopath + ' type="images/png"/>')
+	</script>
+	<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script>
+		document.write('<style>body {background-image: url(' + config.backgroundpath + ');background-position: center;background-repeat: no-repeat;background-size: cover;}</style>')
+		document.write('<style>main {color: ' + config.textcolor + '}.icons-social a {color: ' + config.iconcolor + ';}.icons-social a svg path{fill: ' + config.iconcolor + ';}</style>')
+	</script>
+
+</head>
+
+<body>
+	<main>
+		<script>
+			document.write('<div class="intro">' + config.title + '</div>')
+			if (config.logo === true) {
+				document.write('<p style="text-align:center"><img style="vertical-align: text-top;" src=' + config.logopath + ' height="400" width="400"></p>')
+			}
+			document.write('<div class="tagline">' + config.description + '</div>')
+		</script>
+		<div class="icons-social">
+			<script>
+				if (config.github === true) {
+					document.write('<a target="_blank" href=' + config.githublink + '><i class="fab fa-github"></i></a>')
+				}
+				if (config.instagram === true) {
+					document.write('<a target="_blank" href=' + config.instagramlink + '><i class="fab fa-instagram"></i></a>')
+				}
+				if (config.twitter === true) {
+					document.write('<a target="_blank" href=' + config.twitterlink + '><i class="fab fa-twitter"></i></a>')
+				}
+				if (config.snapchat === true) {
+					document.write('<a target="_blank" href=' + config.snapchatlink + '><i class="fab fa-snapchat"></i></a>')
+				}
+				if (config.discord === true) {
+					document.write('<a target="_blank" href=' + config.discordlink + '><i class="fab fa-discord"></i></a>')
+				}
+				if (config.youtube === true) {
+					document.write('<a target="_blank" href=' + config.youtubelink + '><i class="fab fa-youtube"></i></a>')
+				}
+				if (config.twitch === true) {
+					document.write('<a target="_blank" href=' + config.twitchlink + '><i class="fab fa-twitch"></i></a>')
+				}
+
+
+			</script>
+		</div>
+	</main>
+
+</body>
+
+</html>
